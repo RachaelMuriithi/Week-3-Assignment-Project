@@ -2,6 +2,8 @@
     box-sizing: border-box; 
     margin: 0;
     padding: 0; 
+    color: antiquewhite;
+    background-color: gray;
 }
 li, button, a, {
     text-decoration: none;
@@ -16,6 +18,12 @@ header {
 .logo  [
     cursor: pointer;
 ]
+.logo {
+    transition: all 0.3s ease 0s;
+}
+.logo:hover{
+    color: brown;
+}
 .navbar {
     list-style: none;
 }
@@ -25,9 +33,21 @@ header {
 }
 .navbar li a {
     transition: all 0.3s ease 0s;
+    text-decoration: none;
 
 }
 .navbar li a:hover {
     color: brown;
     
+}
+button {
+    padding: 9px 25px;
+    background-color: rgb(165, 42, 42, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover {
+    color: rgb(255, 0, 0, 0);
 }
