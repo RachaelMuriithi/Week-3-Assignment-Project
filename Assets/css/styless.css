@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0; 
+}
+li, button, a, {
+    text-decoration: none;
+
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+.logo  [
+    cursor: pointer;
+]
+.navbar {
+    list-style: none;
+}
+.navbar li {
+    display: inline-block;
+    padding: 0 20px; 
+}
+.navbar li a {
+    transition: all 0.3s ease 0s;
+
+}
+.navbar li a:hover {
+    color: brown;
+    
+}
