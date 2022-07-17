@@ -64,7 +64,7 @@
 }
 .fata {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 50%;
@@ -148,7 +148,7 @@ form button[type = "submit"], form button[type = "reset"]{
 }
 #img {
     float: right;
-    
+
 }
 
 @media screen and (max-width: 480px) {
