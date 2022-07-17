@@ -23,25 +23,27 @@
                     <div class="fata">
                         
                         <form action="submit" onsubmit="produceReport();">
+                            <br>
                             <h2> Populate the Form below to get a summary of your income</h> 
+                                <br>
                             <div id="daily">
-                                <label for="shed_A">Shed_A: Milk (Litres)</label>
-                                <input id="shed_A" type="number" min="0" required>
+                                <label for="shedA">ShedA: Milk (Litres)</label>
+                                <input id="shedA" type="number" min="0" required>
                             </div>
                     
                             <div id="daily">
-                                <label for="shed_B">Shed_B: Milk (Litres)</label>
-                                <input id="shed_B" type="number" min="0" required>
+                                <label for="shedB">ShedB: Milk (Litres)</label>
+                                <input id="shedB" type="number" min="0" required>
                             </div>
                     
                             <div id="daily">
-                                <label for="shed_C">Shed_C: Milk (Litres)</label>
-                                <input id="shed_C" type="number" min="0" required>
+                                <label for="shedC">ShedC: Milk (Litres)</label>
+                                <input id="shedC" type="number" min="0" required>
                             </div>
                     
                             <div id="daily">
-                                <label for="shed_D">Shed_D: Milk (Litres)</label>
-                                <input id="shed_D" type="number" min="0" required>
+                                <label for="shedD">ShedD: Milk (Litres)</label>
+                                <input id="shedD" type="number" min="0" required>
                             </div>
                     
                             <button type="submit">Submit</button>
@@ -49,15 +51,13 @@
                             
                         </form>
                     </div>
-            
-                    <!-- OUTPUT RESULTS -->
-                    
-                    <div class="outputDisplay">
-                        <h3 id="displayTitle">Production Summary</h3>
+
+                    <div class="output">
+                        <h2 id="displayT">Your! Production Summary</h2>
                         <hr>
-                        <p id="outputData"></p>
-            
-                        <!-- OPTIONAL CHALLENGE -->
+                        <hr>
+                        <p id="outputD"></p>
+
                     </div>
                 </div>
             
