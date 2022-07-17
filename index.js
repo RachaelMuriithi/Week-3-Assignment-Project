@@ -95,7 +95,7 @@ function produceReport(){
     newIncomeNovember = newDailyIncome * 30;
     newIncomeDecember = newDailyIncome * 31;
 
-//     newIncomeInLeapYear = 366 * 49.60;
+    newIncomeInLeapYear = 366 * 49.60;
 
 //     incomeJanuaryDifference = newIncomeJanuary - incomeJanuary;
 //     incomeFebruaryDifference = newIncomeFebruary - incomeFebruary;
