@@ -16,15 +16,15 @@
     padding-right: 1%;
 }
 .mydash .logo {
-    background-color: rgb(11, 69, 50);
-    border-radius: 15%;
+    border-style: inset;
+    background-color: rgb(35, 180, 199);
+    border-radius: 30%;
     font-size: 30px;
     font-weight: 900;
-    font-style: oblique;
-    color: red;
-    padding: 2% 2%;
-    margin-top: 1%;
-    font-family: 'Courier New', Courier, monospace;
+    color: rgb(239, 241, 192);
+    padding: 1.5% 1%;
+    margin-top: 2%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .mydash .db {
      margin-left: 30%;
@@ -34,9 +34,33 @@
      font-size: 50px;
      margin-top: 2%;
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-     text-shadow: 10%;
-     text-shadow: brown;
 }
+.navbar {
+    list-style: circle;
+    margin-top: 2%;
+    margin-left: 2%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2%;
+}
+.con {
+    margin-left: 25%;
+    background-color: aliceblue;
+    margin-top: 3%;
+   
+}
+.con button {
+    padding: 10% 1%;
+    transition: all 0.3s ease 0s;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 10%;
+    background-color: rgb(11, 11, 91);
+}
+.con button:hover {
+    color: rgb(173, 101, 13);
+}
+
 
 /* li, button, a, {
     text-decoration: none;
