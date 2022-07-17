@@ -1,47 +1,151 @@
-let shedA = [ "cowA", "cowB", "cowC", "cowD" ];
-let shedB = [ "cowE", "cowF", "cowG", "cowH" ];
-let shedC = [ "cowI", "cowJ", "cowK", "cowL" ];
-let shedD = [ "cowM", "cowN", "cowO", "cowP" ];
-let totalProduction = shedA.concat (shedB, shedC, shedD);
+function produceReport(){
 
-let milkforcowA = input ("milk cowA produced that day in litres");
-let milkforcowB = input ("milk cowB produced that day in litres");
-let milkforcowC = input ( "milk cowC produced that day in litres");
-let milkforcowD = input ( "milk cowD produced that day in litres");
-let milkforcowE = input ( "milk cowE produced that day in litres");
-let milkforcowF = input ( "milk cowF produced that day in litres");
-let milkforcowG = input ( "milk cowG produced that day in litres");
-let milkforcowH = input ( "milk cowH produced that day in litres");
-let milkforcowI = input ( "milk cowI produced that day in litres");
-let milkforcowJ = input ( "milk cowJ produced that day in litres");
-let milkforcowK = input ( "milk cowK produced that day in litres");
-let milkforcowL = input ( "milk cowL produced that day in litres");
-let milkforcowM = input ( "milk cowM produced that day in litres");
-let milkforcowN = input ( "milk cowN produced that day in litres");
-let milkforcowO = input ( "milk cowO produced that day in litres");
-let milkforcowP = input ( "milk cowP produced that day in litres");
-function milkProductionPerDay () {
+    event.preventDefault();
+
+    let data = [];
+
+     data[0] = data["shedA"] = parseInt(document.getElementById("shedA").value);
+     data[1] = data["shedB"] = parseInt(document.getElementById("shedB").value);
+     data[2] = data["shedC"] = parseInt(document.getElementById("shedC").value);
+     data[3] = data["shedD"] = parseInt(document.getElementById("shedD").value);
+
+    let sumData = data.shedA + data.shedB + data.shedC + data.shedD;
+
+    document.getElementById("outputD").innerHTML += "<Br>"
+
+    document.getElementById("outputD").innerHTML += "<p>Your production in shed A is " + data.shedA + " litres per day</p>";
+    document.getElementById("outputD").innerHTML += "<p>Your production in shed B is " + data.shedB + " litres per day</p>";
+    document.getElementById("outputD").innerHTML += "<p>Your production in shed C is " + data.shedC + " litres per day</p>";
+    document.getElementById("outputD").innerHTML += "<p>Your production in shed D is " + data.shedD + " litres per day</p>";
+
+    document.getElementById("outputD").innerHTML += "<p>Your total production per day is " + sumData + " litres per day</p>";
     
-    var milkPerDayForShedA = (milkforcowA + milkforcowB + milkforcowC + milkforcowD);
-    var milkPerDayForShedB = (milkforcowE + milkforcowF + milkforcowG + milkforcowH);
-    var milkPerDayForShedC = (milkforcowI + milkforcowJ + milkforcowK +milkforcowL);
-    var milkPerDayForShedD = (milkforcowM + milkforcowN + milkforcowO + milkforcowP);
-    var totalMilkPPerDay = (milkPerDayForShedA + milkPerDayForShedB + milkPerDayForShedC
-                            + milkPerDayForShedD);
 
-                            return milkPerDayForShedA;
-                            return milkPerDayForShedB;
-                            return milkPerDayForShedC;
-                            return milkPerDayForShedD;
-                            return totalMilkPPerDay;
+    dailyIncome = sumData * 45;
+
+    document.getElementById("outputD").innerHTML += "<Br>"
+
+    document.getElementById("outputD").innerHTML += "<hr>"
+
+    document.getElementById("outputD").innerHTML += "<p>Your total daily income is Ksh. " + dailyIncome + " </p>";
+
+    document.getElementById("outputD").innerHTML += "<hr>"
+
+    weeklyIncome = dailyIncome * 7;
+
+    document.getElementById("outputD").innerHTML += "<p>Your total weekly income is Ksh. " + weeklyIncome + " </p>";
+
+    document.getElementById("outputD").innerHTML += "<hr>"
+
+    document.getElementById("outputD").innerHTML += "<Br>"
+
+
+    incomeJanuary = dailyIncome * 31;
+    incomeFebruary = dailyIncome * 29;
+    incomeMarch = dailyIncome * 31;
+    incomeApril = dailyIncome * 30;
+    incomeMay = dailyIncome * 31;
+    incomeJune = dailyIncome * 30;
+    incomeJuly = dailyIncome * 31;
+    incomeAugust = dailyIncome * 31;
+    incomeSeptember = dailyIncome * 30;
+    incomeOctober = dailyIncome * 31;
+    incomeNovember = dailyIncome * 30;
+    incomeDecember = dailyIncome * 31;
+
+     
+    document.getElementById("outputD").innerHTML += "<p> Your total income for January is Ksh. " + incomeJanuary + " </p>"
+    document.getElementById("outputD").innerHTML += "<p> Your total income for February is Ksh. " + incomeFebruary + " </p>"
+    document.getElementById("outputD").innerHTML += "<p> Your total income for March is Ksh. " + incomeMarch + " </p>"
+    document.getElementById("outputD").innerHTML += "<p> Your total income for April is Ksh. " + incomeApril + " </p>"
+    document.getElementById("outputD").innerHTML += "<p> Your total income for May is Ksh. " + incomeMay + " </p>"
+    document.getElementById("outputD").innerHTML += "<p> Your total income for June is Ksh. " + incomeJune + " </p>"
+    document.getElementById("outputD").innerHTML += "<p> Your total income for July is Ksh. " + incomeJuly + " </p>"
+    document.getElementById("outputD").innerHTML += "<p> Your total income for August is Ksh. " + incomeAugust + " </p>"
+    document.getElementById("outputD").innerHTML += "<p> Your total income for September is Ksh. " + incomeSeptember + " </p>"
+    document.getElementById("outputD").innerHTML += "<p> Your total income for October is Ksh. " + incomeOctober + " </p>"
+    document.getElementById("outputD").innerHTML += "<p> Your total income for November is Ksh. " + incomeNovember + " </p>"
+    document.getElementById("outputD").innerHTML += "<p> Your total income for December is Ksh. " + incomeDecember + " </p>"
+
+
+    document.getElementById("outputD").innerHTML += "<Br>"
+
+    document.getElementById("outputD").innerHTML += "<hr>"
+
+    incomeInLeapYear = dailyIncome * 366;
+
+    document.getElementById("outputD").innerHTML += "<p>Your total income in a leap year is Ksh. " + incomeInLeapYear + " </p>";
+
+    document.getElementById("outputD").innerHTML += "<hr>"
+
+    document.getElementById("outputD").innerHTML += "<Br>"
+
+    newDailyIncome = sumData * 49.60;
+
+    newIncomeJanuary = newDailyIncome * 31;
+    newIncomeFebruary = newDailyIncome * 29;
+    newIncomeMarch = newDailyIncome * 31;
+    newIncomeApril = newDailyIncome * 30;
+    newIncomeMay = newDailyIncome * 31;
+    newIncomeJune = newDailyIncome * 30;
+    newIncomeJuly = newDailyIncome * 31;
+    newIncomeAugust = newDailyIncome * 31;
+    newIncomeSeptember = newDailyIncome * 30;
+    newIncomeOctober = newDailyIncome * 31;
+    newIncomeNovember = newDailyIncome * 30;
+    newIncomeDecember = newDailyIncome * 31;
+
+    newIncomeInLeapYear = 366 * 49.60;
+
+    incomeJanuaryDifference = newIncomeJanuary - incomeJanuary;
+    incomeFebruaryDifference = newIncomeFebruary - incomeFebruary;
+    incomeMarchDifference = newIncomeMarch - incomeMarch;
+    incomeAprilDifference = newIncomeApril - incomeApril;
+    incomeMayDifference = newIncomeMay - incomeMay;
+    incomeJuneDifference = newIncomeJune - incomeJune;
+    incomeJulyDifference = newIncomeJuly - incomeJuly;
+    incomeAugustDifference = newIncomeAugust - incomeAugust;
+    incomeSeptemberDifference = newIncomeSeptember - incomeSeptember;
+    incomeOctoberDifference = newIncomeOctober - incomeOctober;
+    incomeNovemberDifference = newIncomeNovember - incomeNovember;
+    incomeDecemberDifference = newIncomeDecember - incomeDecember;
+
+
+    document.getElementById("outputData").innerHTML += "<h3> Comparison and difference in income per month for different prices </h3>";
+
+    document.getElementById("outputData").innerHTML += "<p>January: At price = Ksh. 45, you earn: Ksh. " + incomeJanuary + ". At price = 49.60, you earn Ksh. " + Math.round(newIncomeJanuary) + ". The difference, rounded off to the nearest value, is Ksh. " + Math.round(incomeJanuaryDifference) + ".</p>";
+    document.getElementById("outputData").innerHTML += "\n"
+    document.getElementById("outputData").innerHTML += "<p>February: At price = Ksh. 45, you earn: Ksh. " + incomeFebruary + ". At price = 49.60, you earn Ksh. " + Math.round(newIncomeFebruary) + ". The difference, rounded off to the nearest value, is Ksh. " + Math.round(incomeFebruaryDifference) + ".</p>";
+    document.getElementById("outputData").innerHTML += "\n"
+    document.getElementById("outputData").innerHTML += "<p>March: At price = Ksh. 45, you earn: Ksh. " + incomeMarch + ". At price = 49.60, you earn Ksh. " + Math.round(newIncomeMarch) + ". The difference, rounded off to the nearest value, is Ksh. " + Math.round(incomeMarchDifference) + ".</p>";
+    document.getElementById("outputData").innerHTML += "\n"
+    document.getElementById("outputData").innerHTML += "<p>April: At price = Ksh. 45, you earn: Ksh. " + incomeApril + ". At price = 49.60, you earn Ksh. " + Math.round(newIncomeApril) + ". The difference, rounded off to the nearest value, is Ksh. " + Math.round(incomeAprilDifference) + ".</p>";
+    document.getElementById("outputData").innerHTML += "\n"
+    document.getElementById("outputData").innerHTML += "<p>May: At price = Ksh. 45, you earn: Ksh. " + incomeMay + ". At price = 49.60, you earn Ksh. " + Math.round(newIncomeMay) + ". The difference, rounded off to the nearest value, is Ksh. " + Math.round(incomeMayDifference) + ".</p>";
+    document.getElementById("outputData").innerHTML += "\n"
+    document.getElementById("outputData").innerHTML += "<p>June: At price = Ksh. 45, you earn: Ksh. " + incomeJune + ". At price = 49.60, you earn Ksh. " + Math.round(newIncomeJune) + ". The difference, rounded off to the nearest value, is Ksh. " + Math.round(incomeJuneDifference) + ".</p>";
+    document.getElementById("outputData").innerHTML += "\n"
+    document.getElementById("outputData").innerHTML += "<p>July: At price = Ksh. 45, you earn: Ksh. " + incomeJuly + ". At price = 49.60, you earn Ksh. " + Math.round(newIncomeJuly) + ". The difference, rounded off to the nearest value, is Ksh. " + Math.round(incomeJulyDifference) + ".</p>";
+    document.getElementById("outputData").innerHTML += "\n"
+    document.getElementById("outputData").innerHTML += "<p>August: At price = Ksh. 45, you earn: Ksh. " + incomeAugust + ". At price = 49.60, you earn Ksh. " + Math.round(newIncomeAugust) + ". The difference, rounded off to the nearest value, is Ksh. " + Math.round(incomeAugustDifference) + ".</p>";
+    document.getElementById("outputData").innerHTML += "\n"
+    document.getElementById("outputData").innerHTML += "<p>September: At price = Ksh. 45, you earn: Ksh. " + incomeSeptember + ". At price = 49.60, you earn Ksh. " + Math.round(newIncomeSeptember) + ". The difference, rounded off to the nearest value, is Ksh. " + Math.round(incomeSeptemberDifference) + ".</p>";
+    document.getElementById("outputData").innerHTML += "\n"
+    document.getElementById("outputData").innerHTML += "<p>October: At price = Ksh. 45, you earn: Ksh. " + incomeOctober + ". At price = 49.60, you earn Ksh. " + Math.round(newIncomeOctober) + ". The difference, rounded off to the nearest value, is Ksh. " + Math.round(incomeOctoberDifference) + ".</p>";
+    document.getElementById("outputData").innerHTML += "\n"
+    document.getElementById("outputData").innerHTML += "<p>November: At price = Ksh. 45, you earn: Ksh. " + incomeNovember + ". At price = 49.60, you earn Ksh. " + Math.round(newIncomeNovember) + ". The difference, rounded off to the nearest value, is Ksh. " + Math.round(incomeNovemberDifference) + ".</p>";
+    document.getElementById("outputData").innerHTML += "\n"
+    document.getElementById("outputData").innerHTML += "<p>December: At price = Ksh. 45, you earn: Ksh. " + incomeDecember + ". At price = 49.60, you earn Ksh. " + Math.round(newIncomeDecember) + ". The difference, rounded off to the nearest value, is Ksh. " + Math.round(incomeDecemberDifference) + ".</p>";
+    document.getElementById("outputData").innerHTML += "<Br>"
+
+    
 }
-let shedAToday = milkPerDayForShedA;
-let shedBToday = milkPerDayForShedB;
-let shedCToday = milkPerDayForShedC;
-let shedDToday = milkPerDayForShedD;
 
 
 
+function resetPage(){
 
+    document.getElementById("outputData").remove("innerHTML");
+    location.reload();
 
-
+}
