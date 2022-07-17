@@ -28,8 +28,17 @@ function milkProductionPerDay () {
     var milkPerDayForShedD = (milkforcowM + milkforcowN + milkforcowO + milkforcowP);
     var totalMilkPPerDay = (milkPerDayForShedA + milkPerDayForShedB + milkPerDayForShedC
                             + milkPerDayForShedD);
-}
 
+                            return milkPerDayForShedA;
+                            return milkPerDayForShedB;
+                            return milkPerDayForShedC;
+                            return milkPerDayForShedD;
+                            return totalMilkPPerDay;
+}
+let shedAToday = milkPerDayForShedA;
+let shedBToday = milkPerDayForShedB;
+let shedCToday = milkPerDayForShedC;
+let shedDToday = milkPerDayForShedD;
 
 
 
