@@ -65,11 +65,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    margin-right: 20px;
-    box-shadow: 0px 0px 10px rgb(150, 179, 169);
+    width: 40%;
+     margin-right: 10px;
+    box-shadow: 0px 0px 10px rgb(23, 119, 85);
     border-radius: 4px;
     font-size: 16px;
+    margin-bottom: 2%
        
 }
 
@@ -104,22 +105,26 @@ form button {
 form > button[type = "submit"]{
     margin-top: 20px;
 }
-form > button[type = "submit"], form > button[type = "reset"]{
-    background: none;
+form button[type = "submit"], form button[type = "reset"]{
+    background: turquoise;
     color: white;
     border: 1px solid white;
 } 
 
 
 
-.outputDisplay{
-    overflow: auto;
-    width: 50%;
-    box-shadow:0px 0px 10px rgb(150, 179, 169);
-    background-color: rgb(25, 49, 41);
-    border-radius: 4px;
+.output{
+    width: 40%;
+    box-shadow:0px 0px 10px rgb(145, 69, 31);
+    background-color: rgb(6, 6, 55);
+    border-radius: 2px;
     font-size: 16px;
-    height: 550px;
+    height: 540px;
+    overflow: auto;
+    display: inline-block;
+    /* float: right; */
+    margin-left: 2%;
+    margin-right: 3%;
     
 }
 
@@ -127,7 +132,7 @@ form > button[type = "submit"], form > button[type = "reset"]{
     text-align: center;
 }
 
-#outputData{
+#outputD{
     padding: 0px 20px;
 }
 
@@ -142,7 +147,7 @@ form > button[type = "submit"], form > button[type = "reset"]{
         margin-bottom: 20px; 
     }
 
-    .outputDisplay{
+    .outputD{
         width: 100%;
        
     }
