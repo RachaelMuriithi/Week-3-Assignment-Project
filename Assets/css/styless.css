@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0; 
     color: antiquewhite;
-    background-color: rgb(14, 6, 47);
+    background-color: rgb(19, 8, 81);
 }
 .mydash {
     list-style: none;
@@ -49,7 +49,7 @@
     margin-top: 3%;
    
 }
-.con button {
+. con button {
     padding: 10% 1%;
     transition: all 0.3s ease 0s;
     font-weight: 600;
@@ -61,50 +61,90 @@
     color: rgb(173, 101, 13);
 }
 
-
-/* li, button, a, {
-    text-decoration: none;
-
-}
-header {
+.fata {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 2% 6%;
+    width: 50%;
+    margin-right: 20px;
+    box-shadow: 0px 0px 10px rgb(150, 179, 169);
+    border-radius: 4px;
+    font-size: 16px;
+       
 }
-.logo  [
-    cursor: pointer;
-]
-.logo {
-    transition: all 0.3s ease 0s;
-}
-.logo:hover{
-    color: brown;
-}
-.navbar {
-    list-style: none;
-}
-.navbar li {
-    display: inline-block;
-    padding: 0 20px; 
-}
-.navbar li a {
-    transition: all 0.3s ease 0s;
-    text-decoration: none;
 
-}
-.navbar li a:hover {
-    color: brown;
+.fata   #daily{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
     
 }
-button {
-    padding: 9px 25px;
-    background-color: rgb(165, 42, 42, 1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
+
+.fata  form{
+    width: 100%;
+    padding: 20px;
+    
 }
-button:hover {
-    color: rgb(255, 0, 0, 0);
-} */
+
+form  div  input[type="number"]{
+    height: 30px;
+     
+}
+
+form button {
+    
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    width: 100%;
+    
+}
+
+form > button[type = "submit"]{
+    margin-top: 20px;
+}
+form > button[type = "submit"], form > button[type = "reset"]{
+    background: none;
+    color: white;
+    border: 1px solid white;
+} 
+
+
+
+.outputDisplay{
+    overflow: auto;
+    width: 50%;
+    box-shadow:0px 0px 10px rgb(150, 179, 169);
+    background-color: rgb(25, 49, 41);
+    border-radius: 4px;
+    font-size: 16px;
+    height: 550px;
+    
+}
+
+#displayTitle{
+    text-align: center;
+}
+
+#outputData{
+    padding: 0px 20px;
+}
+
+@media screen and (max-width: 760px) {
+    .milkP{
+        display: flex;
+        flex-direction: column;  
+    }
+
+    .fata {
+        width: 100%;
+        margin-bottom: 20px; 
+    }
+
+    .outputDisplay{
+        width: 100%;
+       
+    }
+    
+}
