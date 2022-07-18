@@ -23,11 +23,12 @@
     font-size: 30px;
     font-weight: 900;
     color: rgb(239, 241, 192);
-    padding: 1.5% 1%;
-    margin-top: 2%;
+    padding: 1.2% 0.5%;
+    margin-top: 1%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .mydash .db {
+    margin-right: 7%;
      margin-left: 10%;
      background-color: aliceblue;
      color: rgb(15, 15, 95);
@@ -43,7 +44,7 @@
     /* margin-right: 2%; */
 }
 .con {
-    margin-left: 40%;
+    margin-left: 15%;
     background-color: aliceblue;
     margin-top: 3%;
    
@@ -147,7 +148,8 @@ form button[type = "submit"], form button[type = "reset"]{
     width: 400px;
 }
 #img {
-    float: right;
+    width: 200px;
+    margin-left: 10%;
 
 }
 
